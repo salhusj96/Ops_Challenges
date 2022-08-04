@@ -1,4 +1,4 @@
-:: Script: Ops 201 Class 09 Challenge Solution
+:: Script: Ops 201 Class 08 Challenge Solution
 :: Author: Jon Salhus
 :: Date of latest revision: 8/4/2022
 :: Purpose: Copies files and produces a backup log
