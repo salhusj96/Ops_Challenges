@@ -10,7 +10,7 @@ Purpose: Fetches useful System event logs
 <# Outputs all "error" type events from System log to errors.txt #>
     Get-EventLog -LogName System -EntryType Error | Out-File -FilePath C:\Users\Jon\Desktop\errors.txt
 <# Prints to the screen all events with ID of 16 from System log #>
-    Get-EventLog -LogName System | Where-Object {$_.EventID -eq 16} | Select-Object -Property Source, EventID, Message
+    Get-EventLog -LogName System -InstanceId 16
 <# Pauses the script, need to press enter to continue. This makes it so both lines are not grouped together. #>
     Write-Output "20 most recent entries from the System log."
     Pause   
