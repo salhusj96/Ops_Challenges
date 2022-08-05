@@ -2,11 +2,9 @@
 
 # Script: Ops 201 Class 05 Ops Challenge Solution
 # Author: Jon Salhus                  
-# Date of latest revision: 7/29/2022   
+# Date of latest revision: 8/4/2022   
 # Purpose: Print running processes, ask the user for a PID, then kill the process with that PID
 
-# This initializes a process in the background
-    nohup vim &
 # This displays running processes
     ps -aux
 # This asks the user for input

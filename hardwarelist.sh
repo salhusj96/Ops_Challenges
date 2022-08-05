@@ -2,7 +2,7 @@
 
 # Script: Ops 201 Class 07 Ops Challenge Solution
 # Author: Jon Salhus
-# Date of latest revision: 8/2/2022
+# Date of latest revision: 8/4/2022
 # Purpose: Displays system information, parses out unnecessary information
 
 #Main
