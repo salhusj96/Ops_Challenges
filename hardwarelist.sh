@@ -9,7 +9,7 @@
 
 #Computer Name
     echo "Computer Name: "
-    sudo lshw -class system | grep "product" | grep -v "PnP"
+    sudo lshw -class system | head -n 1
 #CPU
     echo "CPU: "
     sudo lshw -class processor | grep "product"
@@ -19,9 +19,7 @@
     sudo lshw -class processor | grep "width"
 #RAM
     echo "RAM: "
-    sudo lshw -class memory | grep "description" | grep -v "firmware" | grep -v "cache" | grep -v "bank" | grep -v "BIOS" | grep -v "System Memory"
-    sudo lshw -class memory | grep "physical id" | grep -v "bank" | grep -v "0" | grep -v "34"| grep -v "35"| grep -v "36" | grep -v "1"
-    sudo lshw -class memory | grep "size" | grep -v "bank"
+    sudo lshw | grep -A 4 "*-memory" | grep -v "*-" | grep -v "slot"
 #Display adapter
     echo "Display adapter: "
     sudo lshw -class display | grep -v "version" | grep -v "logical name" | grep -v "*-"
